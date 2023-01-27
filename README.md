@@ -1,9 +1,9 @@
 
-# Dashy
+# Dashy Frontend
 
 [Video Demo](https://www.youtube.com/watch?v=mEq93ptUbgI)
 
-Dashy is an easy-to-use productivity dashboard.
+This is frontend repository for Dashy. Dashy is an easy-to-use, MERN stack productivity dashboard.
 
 [Link to Backend API](https://github.com/ssafali/dashboard-backend)
 
