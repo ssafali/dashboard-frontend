@@ -1,0 +1,7 @@
+.todo-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 2%;
+    position: fixed;
+}

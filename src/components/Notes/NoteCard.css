@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+form.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  width: 215px;
+  min-width: 215px;
+  height: 280px;
+  background-color: ivory;
+  border-radius: 5px;
+  box-shadow: 0px 0px 105px -15px rgba(0, 0, 0, 1);
+}
+
+div.note-cards form.form:nth-child(6n + 2) {
+  margin-left: 260px;
+}
+
+input.new-title {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  height: 25px;
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 8px;
+  transition: 0.5s ease;
+  color: black;
+  background-color: inherit;
+  letter-spacing: 0.3px;
+}
+
+div.top-title-pin {
+  display: flex;
+  flex-direction: row;
+}
+
+img.pin-btn, img.pin-btn-black {
+  cursor: pointer;
+  width: 26px;
+  height: 28px;
+  margin-top: 4px;
+  margin-right: 1px;
+  scale: 0.8;
+  opacity: 0.8;
+  transition: 0.15s;
+}
+
+img.pin-btn:hover, img.pin-btn-black:hover {
+  scale: 1;
+  opacity: 1;
+}
+
+#pin-btn-black {
+  opacity: 1 ;
+}
+
+.new-title::placeholder {
+  /* font-weight: 400;
+    font-size: 24px; */
+}
+/* .new-title:focus {
+    border-bottom-color:#f28482;
+    border-width: 2px;
+    padding: 6px;
+    height: 40px;
+    font-size: 16px;
+} */
+.new-title:focus::placeholder {
+  color: black;
+}
+
+textarea.new-content {
+  font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  margin-top: 5px;
+  padding-top: 5px;
+  resize: none;
+  outline: none;
+  border-bottom: none;
+  color: black;
+  height: 230px;
+  border: none;
+  padding-left: 8px;
+  transition: 0.5s ease;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 0;
+  background-color: inherit;
+}
+
+div.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1.6rem;
+  background-color: inherit;
+  margin-bottom: 6px;
+  border-top-width: 1px;
+  border-top-color: black;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  outline: none;
+}
+
+/* select:focus {
+    outline: none;
+    border-color: rgb(107, 231, 161);
+  } */
+
+button.category-btn,
+.save-btn,
+.cancel-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  height: 97%;
+  margin-left: -1px;
+  padding: 4px;
+  padding-top: 1px;
+  margin-top: 4px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.1s;
+  background-color: inherit;
+  scale: 0.81;
+  max-width: 65px !important;
+  border: 2px solid black;
+  font-weight: 700;
+
+
+  /* display: flexbox; */
+  /* s */
+}
+
+button.category-btn:hover {
+  box-shadow: none;
+  background-color: inherit;
+  color: black;
+  scale: 0.9;
+  font-weight: 700;
+}
+
+button.general:hover {
+  background-color: #7eb6d0;
+  color: ivory;
+}
+
+button.home:hover {
+  background-color: #9b5de5;
+  color: ivory;
+}
+
+button.work:hover {
+  background-color: rgb(204, 158, 78);
+  color: ivory;
+}
+.save-btn {
+  margin-left: 2px;
+  margin-right: -5px;
+  width: 60px;
+  transition: 0.2s;
+}
+
+.save-btn:hover {
+  background-color: rgb(50, 186, 124);
+  box-shadow: none;
+  scale: 0.9;
+}
+
+.cancel-btn {
+  margin-right: 0;
+  transition: 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: rgb(186, 50, 50);
+  box-shadow: none;
+  scale: 0.9;
+}
+
+.delete-palette {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.delete-palette img.palette {
+  width: 16px;
+  margin-top: 7px;
+  margin-left: -20px;
+}
+
+.delete-palette .change-color .color-options ul.color-options-list {
+  scale: 0.7;
+  position: absolute;
+  margin-left: -36px !important;
+  margin-top: -90px !important;
+}
+
+.delete-palette.delete-btn, img.delete-btn {
+  position: relative;
+  cursor: pointer;
+  width: 26px;
+  margin-top: 5px;
+  margin-left: -5px;
+  scale: 0.9;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  scale: 1;
+  opacity: 1;
+}
+
+textarea.new-content::-webkit-scrollbar {
+  width: 0.21rem;
+}
+textarea.new-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  border-radius: 20px;
+}
+textarea.new-content::-webkit-scrollbar-thumb {
+  background-color: rgba(224, 122, 95, 0.6);
+  border-radius: 20px;
+}
+

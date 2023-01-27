@@ -1,0 +1,110 @@
+.weatherContainer {
+  max-width: 290px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+  top: 22%;
+  right: 4%;
+  justify-content: space-evenly;
+  position: absolute;
+
+  -moz-animation: weather-big 0.9s ease-out;
+  -o-animation: weather-big 0.9s ease-out;
+  animation: weather-big 0.9s ease-out;
+  -webkit-animation: weather-big 0.9s ease-out;
+}
+
+.weatherContainer:hover {
+  scale: 1.02;
+  cursor: pointer;
+}
+
+.weatherLocation h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: ivory;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-bottom: 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 2px 2px rgba(0, 0, 0, 0.09),
+    0 4px 4px rgba(0, 0, 0, 0.09), 0 8px 8px rgba(0, 0, 0, 0.09),
+    0 16px 16px rgba(0, 0, 0, 0.09), 0 32px 32px rgba(0, 0, 0, 0.09);
+  text-align: center;
+}
+
+.weatherTemp {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 2px 2px rgba(0, 0, 0, 0.09),
+    0 4px 4px rgba(0, 0, 0, 0.09), 0 8px 8px rgba(0, 0, 0, 0.09),
+    0 16px 16px rgba(0, 0, 0, 0.09), 0 32px 32px rgba(0, 0, 0, 0.09);
+}
+
+.weatherTop {
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.weatherDescription {
+  position: relative;
+  top: -40%;
+  right: -100%;
+  transform-origin: 0 0;
+  transform: rotate(-270deg);
+  color: ivory;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.weatherDescription p {
+  font-size: larger;
+}
+
+.weatherBottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 120%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  border-radius: 12px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: ivory;
+}
+
+.weatherBottom span {
+  font-size: 14px;
+  color: ivory;
+}
+
+.weatherBottom .bold {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+
+.svgIcon {
+  height: 160px;
+  margin-top: -30px;
+}
+
+.bottom-details {
+  font-weight: 500;
+}
+
+.vertical-line {
+  border-left: 1px solid ivory; 
+}

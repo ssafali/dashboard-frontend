@@ -1,0 +1,89 @@
+/* .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #efeded;
+    padding: 10px 20px;
+    font-weight: 600;
+  
+    background-color: transparent;
+    background-repeat:no-repeat;
+    color: beige;
+
+    width: 205vh;
+    height: 5vh;
+} */
+
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: none;
+    box-sizing: border-box;
+    letter-spacing: 0.6px;
+}
+
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 9px 25px;
+}
+
+.headerLogo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.88;
+}
+
+.headerLogo:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* .navLi {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 0px 0px 20px;
+} */
+
+.navButton {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 40px;
+    opacity: 0.88;
+    font-weight: 600;
+}
+
+.navButton:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.logout-btn {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.88;
+    font-weight: 600;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+
+.logout-btn:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+
+  

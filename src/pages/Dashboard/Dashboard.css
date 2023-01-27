@@ -1,0 +1,228 @@
+.dashboard {
+  font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons-svg {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  gap: 20px;
+  right: 1%;
+  bottom: 0.5%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.icons-svg p {
+  color: rgb(0, 0, 0);
+  font-size: 21px;
+  font-weight: 700;
+  text-shadow: 0px 0.3px 0.3px black;
+}
+
+.icon-item-todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  gap: 7px;
+}
+
+.todo-svg {
+  transition: 0.3s;
+  margin-bottom: -25px;
+}
+
+.todo-svg:hover,
+.notes-svg:hover,
+.news-svg:hover {
+  transform: translateY(-5px);
+}
+
+.notes-svg {
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 9px;
+  margin-left: 12px;
+}
+
+.icon-item-notes p {
+  margin-top: 3px;
+  margin-left: 12px;
+}
+
+.news-svg {
+  transition: 0.3s;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  bottom: -9px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes show-news {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-news {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes show-news {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes show-news {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes todo {
+  0% {
+    right: 1%;
+    bottom: 5%;
+  }
+
+  100% {
+    right: 1%;
+    bottom: 12%;
+  }
+}
+
+
+.show-news,
+.show-notes,
+form.form {
+  -moz-animation: show-news 1s ease;
+  -o-animation: show-news 1s ease;
+  animation: show-news 1s ease;
+  -webkit-animation: show-news 1s ease;
+}
+
+@-webkit-keyframes pomodoro {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 1;
+  }
+}
+
+@keyframes pomodoro {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 1;
+  }
+}
+
+@-moz-keyframes pomodoro {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 1;
+  }
+}
+
+@-o-keyframes pomodoro {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 1;
+  }
+}
+
+.container {
+  -moz-animation: pomodoro 0.5s ease-out;
+  -o-animation: pomodoro 0.5s ease-out;
+  animation: pomodoro 0.5s ease-out;
+  -webkit-animation: pomodoro 0.5s ease-out;
+}
+
+@-webkit-keyframes weather-big {
+  from {
+    top: 14%;
+    right: 1%;
+  }
+
+  to {
+    top: 22%;
+    right: 4%;
+  }
+}
+
+@keyframes weather-big {
+  from {
+    top: 14%;
+    right: 1%;
+  }
+
+  to {
+    top: 22%;
+    right: 4%;
+  }
+}
+
+@-webkit-keyframes weather-small {
+  from {
+    top: 22%;
+    right: 4%;
+  }
+
+  to {
+    top: 14%;
+    right: 1%;
+  }
+}
+
+@keyframes weather-small {
+  from {
+    top: 22%;
+    right: 4%;
+  }
+
+  to {
+    top: 14%;
+    right: 1%;
+  }
+}

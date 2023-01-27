@@ -1,0 +1,54 @@
+.time-container {
+  padding: 30px;
+  margin-top: 0vh;
+  margin-left: auto;
+  margin-right: auto;  
+  position: static;
+}
+
+.time-dashboard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 124px;
+  margin: 0px;
+  color: ivory;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 2px 2px rgba(0, 0, 0, 0.09),
+    0 4px 4px rgba(0, 0, 0, 0.09), 0 8px 8px rgba(0, 0, 0, 0.09),
+    0 16px 16px rgba(0, 0, 0, 0.09), 0 32px 32px rgba(0, 0, 0, 0.09);
+  transition: 0.1s;
+}
+
+.clock:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.date {
+  font-size: 30px;
+  font-weight: 500;
+  color: ivory;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 2px 2px rgba(0, 0, 0, 0.08),
+    0 4px 4px rgba(0, 0, 0, 0.09), 0 8px 8px rgba(0, 0, 0, 0.09),
+    0 16px 16px rgba(0, 0, 0, 0.09), 0 32px 32px rgba(0, 0, 0, 0.09);
+  transition: 0.1s;
+
+}
+
+/* .date:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+} */
+
+.clock p {
+    font-size: 18px;
+    margin-top: 29px;
+    margin-left: 5px;
+}
